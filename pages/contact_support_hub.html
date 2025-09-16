@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Support Hub - AeroHub Nigeria</title>
+    <meta name="description" content="Get comprehensive support for your AeroHub Nigeria experience. Multiple contact channels, FAQ, and specialized assistance available 24/7." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerohubni2963back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#2E8B57"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#DAA520"/>
+                            <circle cx="20" cy="20" r="4" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">AeroHub Nigeria</h1>
+                        <p class="text-xs text-text-secondary">Premium Aviation Gateway</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="smart_homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="terminal_navigator.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Terminal Guide</a>
+                        <a href="services_marketplace.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Services</a>
+                        <a href="travel_intelligence_center.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Travel Intelligence</a>
+                        <a href="about_aero_hub_nigeria.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        <a href="contact_support_hub.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="smart_homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="terminal_navigator.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Terminal Guide</a>
+                <a href="services_marketplace.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                <a href="travel_intelligence_center.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Travel Intelligence</a>
+                <a href="about_aero_hub_nigeria.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="contact_support_hub.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#2E8B57" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6">
+                    Contact & <span class="text-secondary">Support Hub</span>
+                </h1>
+                <p class="text-lg text-text-secondary mb-8 max-w-3xl mx-auto">
+                    We're here to assist you 24/7 with comprehensive support across multiple channels. 
+                    Experience Nigerian hospitality through our dedicated customer service.
+                </p>
+                
+                <!-- Quick Contact Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+2341234567890" class="btn-primary">Call Now</a>
+                    <button onclick="openLiveChat()" class="btn-secondary">Live Chat</button>
+                    <a href="https://wa.me/2341234567890" class="btn-accent">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Banner -->
+    <section class="bg-error text-white py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center text-center">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                </svg>
+                <span class="font-semibold">Emergency: +234 1 234 5678 (24/7) | Medical Emergency: +234 1 234 5679</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Channels -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Get in Touch</h2>
+                <p class="text-lg text-text-secondary">Multiple ways to reach us for any assistance you need</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Phone Support -->
+                <div class="card-elevated text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Phone Support</h3>
+                    <div class="space-y-3 text-text-secondary">
+                        <div>
+                            <p class="font-medium">General Inquiries</p>
+                            <a href="tel:+2341234567890" class="text-primary hover:text-primary-600">+234 1 234 5678</a>
+                        </div>
+                        <div>
+                            <p class="font-medium">Flight Information</p>
+                            <a href="tel:+2341234567891" class="text-primary hover:text-primary-600">+234 1 234 5679</a>
+                        </div>
+                        <div>
+                            <p class="font-medium">Business Services</p>
+                            <a href="tel:+2341234567892" class="text-primary hover:text-primary-600">+234 1 234 5680</a>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-4">Available 24/7</p>
+                </div>
+
+                <!-- Digital Channels -->
+                <div class="card-elevated text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-200 transition-colors">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Digital Support</h3>
+                    <div class="space-y-3">
+                        <button onclick="openLiveChat()" class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-600 transition-colors">
+                            Live Chat
+                        </button>
+                        <a href="https://wa.me/2341234567890" class="block w-full bg-success text-white py-2 px-4 rounded-lg hover:bg-success-600 transition-colors">
+                            WhatsApp Support
+                        </a>
+                        <a href="mailto:support@aerohub.ng" class="block w-full bg-secondary text-white py-2 px-4 rounded-lg hover:bg-secondary-600 transition-colors">
+                            Email Support
+                        </a>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-4">Response within 2 hours</p>
+                </div>
+
+                <!-- Location & Hours -->
+                <div class="card-elevated text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-colors">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Visit Us</h3>
+                    <div class="text-text-secondary space-y-2">
+                        <p class="font-medium">Murtala Muhammed International Airport</p>
+                        <p>Terminal 2, Level 2</p>
+                        <p>Ikeja, Lagos State, Nigeria</p>
+                        <div class="mt-4">
+                            <p class="font-medium">Operating Hours</p>
+                            <p>24/7 - Always Open</p>
+                        </div>
+                    </div>
+                    <button class="mt-4 text-primary font-medium hover:text-primary-600">Get Directions →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-text-secondary">Quick answers to common questions about AeroHub Nigeria</p>
+            </div>
+
+            <!-- FAQ Search -->
+            <div class="max-w-2xl mx-auto mb-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search FAQ..." class="input-field pl-12" id="faq-search" />
+                    <svg class="w-5 h-5 text-text-secondary absolute left-4 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="px-4 py-2 bg-primary text-white rounded-lg font-medium" onclick="filterFAQ('all')">All</button>
+                <button class="px-4 py-2 bg-surface text-text-secondary rounded-lg font-medium hover:bg-primary-50" onclick="filterFAQ('travel')">Travel Requirements</button>
+                <button class="px-4 py-2 bg-surface text-text-secondary rounded-lg font-medium hover:bg-primary-50" onclick="filterFAQ('services')">Airport Services</button>
+                <button class="px-4 py-2 bg-surface text-text-secondary rounded-lg font-medium hover:bg-primary-50" onclick="filterFAQ('cultural')">Cultural Guide</button>
+                <button class="px-4 py-2 bg-surface text-text-secondary rounded-lg font-medium hover:bg-primary-50" onclick="filterFAQ('operations')">Operations</button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="max-w-4xl mx-auto space-y-4" id="faq-container">
+                <!-- Travel Requirements -->
+                <div class="card faq-item" data-category="travel">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">What documents do I need to travel to Nigeria?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>International visitors need a valid passport with at least 6 months validity and a Nigerian visa (unless from visa-exempt countries). Yellow fever vaccination certificate is mandatory. Business travelers may need additional documentation.</p>
+                    </div>
+                </div>
+
+                <div class="card faq-item" data-category="travel">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">How early should I arrive at the airport?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>We recommend arriving 3 hours before international flights and 2 hours before domestic flights. During peak periods (holidays, major events), consider arriving 30 minutes earlier.</p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="card faq-item" data-category="services">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">What premium services are available?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>We offer premium lounges, VIP assistance, secure parking, luxury ground transportation, special assistance for disabled passengers, and business aviation services. All can be booked through our Services Marketplace.</p>
+                    </div>
+                </div>
+
+                <div class="card faq-item" data-category="services">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">How do I access the premium lounges?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>Lounge access is available through airline status, credit card benefits, or direct purchase (₦15,000). Book online for guaranteed access and special rates. Our lounges feature Nigerian cuisine, business facilities, and cultural showcases.</p>
+                    </div>
+                </div>
+
+                <!-- Cultural -->
+                <div class="card faq-item" data-category="cultural">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">What cultural experiences are available at the airport?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>Experience Nigerian art galleries, traditional music performances, local craft shops, authentic cuisine restaurants, and cultural exhibitions. Our terminal showcases Nigeria's rich heritage through rotating displays and live performances.</p>
+                    </div>
+                </div>
+
+                <!-- Operations -->
+                <div class="card faq-item" data-category="operations">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">How can I track my flight status?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>Use our real-time flight tracker on the homepage, download our mobile app for push notifications, or call our flight information hotline at +234 1 234 5679. We provide proactive updates for delays and gate changes.</p>
+                    </div>
+                </div>
+
+                <div class="card faq-item" data-category="operations">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-primary">What happens if my flight is delayed or cancelled?</h3>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-text-secondary hidden">
+                        <p>We provide immediate notifications, rebooking assistance, meal vouchers for extended delays, and accommodation if needed. Our customer service team is available 24/7 to assist with alternative arrangements and compensation claims.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Ticket System -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Submit Support Request</h2>
+                <p class="text-lg text-text-secondary">Can't find what you're looking for? Send us a detailed inquiry</p>
+            </div>
+
+            <div class="card-elevated">
+                <form class="space-y-6" onsubmit="submitSupportTicket(event)">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Full Name *</label>
+                            <input type="text" required class="input-field" placeholder="Enter your full name" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Email Address *</label>
+                            <input type="email" required class="input-field" placeholder="your.email@example.com" />
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Phone Number</label>
+                            <input type="tel" class="input-field" placeholder="+234 XXX XXX XXXX" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Inquiry Type *</label>
+                            <select required class="input-field">
+                                <option value>Select inquiry type</option>
+                                <option value="flight">Flight Information</option>
+                                <option value="services">Airport Services</option>
+                                <option value="accessibility">Accessibility Support</option>
+                                <option value="business">Business Inquiries</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Flight Number (if applicable)</label>
+                        <input type="text" class="input-field" placeholder="e.g., LH 568, BA 075" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Subject *</label>
+                        <input type="text" required class="input-field" placeholder="Brief description of your inquiry" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Detailed Message *</label>
+                        <textarea required rows="6" class="input-field" placeholder="Please provide as much detail as possible to help us assist you better..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Attachments</label>
+                        <div class="border-2 border-dashed border-border rounded-lg p-6 text-center">
+                            <svg class="w-12 h-12 text-text-secondary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                            </svg>
+                            <p class="text-text-secondary">Drop files here or <button type="button" class="text-primary font-medium">browse</button></p>
+                            <p class="text-sm text-text-secondary mt-2">Max file size: 10MB. Supported: PDF, JPG, PNG, DOC</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input type="checkbox" id="privacy-consent" class="w-4 h-4 text-primary border-border rounded focus:ring-primary-500" />
+                        <label for="privacy-consent" class="ml-2 text-sm text-text-secondary">
+                            I agree to the processing of my personal data for support purposes
+                        </label>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button type="submit" class="btn-primary">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business & Partnership Contacts -->
+    <section class="py-16 bg-gradient-to-br from-secondary-50 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Business & Partnership Contacts</h2>
+                <p class="text-lg text-text-secondary">Dedicated channels for airlines, cargo operators, and commercial partners</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Airline Partnerships -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Airline Operations</h3>
+                    <div class="space-y-2 text-text-secondary mb-4">
+                        <p>Route Development</p>
+                        <p>Ground Handling Services</p>
+                        <p>Terminal Operations</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-medium">airlines@aerohub.ng</p>
+                        <p>+234 1 234 5681</p>
+                    </div>
+                </div>
+
+                <!-- Cargo Services -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Cargo Operations</h3>
+                    <div class="space-y-2 text-text-secondary mb-4">
+                        <p>Freight Services</p>
+                        <p>Warehouse Management</p>
+                        <p>Customs Clearance</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-medium">cargo@aerohub.ng</p>
+                        <p>+234 1 234 5682</p>
+                    </div>
+                </div>
+
+                <!-- Commercial Partnerships -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Commercial Services</h3>
+                    <div class="space-y-2 text-text-secondary mb-4">
+                        <p>Retail Partnerships</p>
+                        <p>Advertising Opportunities</p>
+                        <p>Concession Services</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-medium">commercial@aerohub.ng</p>
+                        <p>+234 1 234 5683</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Support -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Accessibility Support
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        We're committed to providing inclusive travel experiences for all passengers. 
+                        Our specialized support team ensures comfortable and dignified assistance.
+                    </p>
+
+                    <!-- Accessibility Services -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Mobility Assistance</h4>
+                                <p class="text-text-secondary">Wheelchair services, mobility aids, and personal assistance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Visual & Hearing Support</h4>
+                                <p class="text-text-secondary">Guide dog facilities, audio assistance, and sign language interpreters</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Medical Support</h4>
+                                <p class="text-text-secondary">Medical equipment assistance and special medical needs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:+2341234567893" class="btn-primary">Call Accessibility Team</a>
+                        <a href="mailto:accessibility@aerohub.ng" class="btn-secondary">Email Support</a>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2071&auto=format&fit=crop" alt="Accessibility Support Services" class="w-full h-96 object-cover rounded-2xl shadow-elevation" onerror="this.src='https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    
+                    <!-- Contact Info Overlay -->
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4">
+                        <h4 class="font-semibold text-primary mb-2">24/7 Accessibility Hotline</h4>
+                        <p class="text-text-secondary text-sm mb-2">Pre-book assistance 48 hours in advance</p>
+                        <p class="font-medium text-primary">+234 1 234 5684</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Community -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Connect With Us</h2>
+                <p class="text-lg text-text-secondary">Follow us for updates, travel tips, and community engagement</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Twitter -->
+                <div class="card text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Twitter</h3>
+                    <p class="text-text-secondary text-sm mb-4">Real-time updates and quick support</p>
+                    <a href="https://twitter.com/aerohubng" class="text-blue-500 font-medium">@AeroHubNG</a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="card text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Facebook</h3>
+                    <p class="text-text-secondary text-sm mb-4">Community updates and events</p>
+                    <a href="https://facebook.com/aerohubng" class="text-blue-600 font-medium">AeroHub Nigeria</a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="card text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-200 transition-colors">
+                        <svg class="w-8 h-8 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.875 2.026-1.297 3.323-1.297s2.448.422 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.404h-1.509V6.077h1.509v1.507zm-.674 5.863c0-1.095-.422-2.124-1.161-2.862-.739-.739-1.767-1.161-2.862-1.161s-2.124.422-2.862 1.161c-.739.738-1.161 1.767-1.161 2.862 0 1.095.422 2.124 1.161 2.862.738.739 1.767 1.161 2.862 1.161s2.124-.422 2.862-1.161c.739-.738 1.161-1.767 1.161-2.862z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Instagram</h3>
+                    <p class="text-text-secondary text-sm mb-4">Visual stories and experiences</p>
+                    <a href="https://instagram.com/aerohubng" class="text-pink-500 font-medium">@aerohubng</a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="card text-center group hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-8 h-8 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">LinkedIn</h3>
+                    <p class="text-text-secondary text-sm mb-4">Business updates and careers</p>
+                    <a href="https://linkedin.com/company/aerohubng" class="text-blue-700 font-medium">AeroHub Nigeria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="white"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#2E8B57"/>
+                            <circle cx="20" cy="20" r="4" fill="#DAA520"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-xl font-bold">AeroHub Nigeria</h3>
+                            <p class="text-sm opacity-90">Premium Aviation Gateway</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 mb-4 max-w-md">
+                        Where Nigeria meets the world. Experience seamless journeys through our premium digital aviation gateway 
+                        with authentic Nigerian hospitality and world-class efficiency.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li><a href="terminal_navigator.html" class="hover:text-white transition-colors">Terminal Guide</a></li>
+                        <li><a href="services_marketplace.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="travel_intelligence_center.html" class="hover:text-white transition-colors">Travel Intelligence</a></li>
+                        <li><a href="about_aero_hub_nigeria.html" class="hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li>+234 1 234 5678</li>
+                        <li>info@aerohub.ng</li>
+                        <li>Murtala Muhammed International Airport</li>
+                        <li>Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+                <p>&copy; 2025 AeroHub Nigeria. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = event.target.closest('button');
+            
+            if (!menuButton && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // FAQ Filter Function
+        function filterFAQ(category) {
+            const faqItems = document.querySelectorAll('.faq-item');
+            const buttons = document.querySelectorAll('button[onclick^="filterFAQ"]');
+            
+            // Update button styles
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-primary-50');
+            });
+            
+            event.target.classList.remove('bg-surface', 'text-text-secondary', 'hover:bg-primary-50');
+            event.target.classList.add('bg-primary', 'text-white');
+            
+            // Filter FAQ items
+            faqItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // FAQ Search Function
+        document.getElementById('faq-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('h3').textContent.toLowerCase();
+                const answer = item.querySelector('.text-text-secondary').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Support Ticket Submission
+        function submitSupportTicket(event) {
+            event.preventDefault();
+            
+            // Show success message
+            alert('Thank you for your inquiry! We have received your support request and will respond within 24 hours. Your ticket ID is: AH-' + Date.now().toString().slice(-6));
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Live Chat Function
+        function openLiveChat() {
+            alert('Live chat feature will be available soon. Please use our phone support or email for immediate assistance.');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

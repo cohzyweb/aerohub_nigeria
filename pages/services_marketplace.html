@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Marketplace - AeroHub Nigeria</title>
+    <meta name="description" content="Book premium airport services - lounges, parking, transportation, and unique Nigerian experiences with transparent pricing" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerohubni2963back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#2E8B57"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#DAA520"/>
+                            <circle cx="20" cy="20" r="4" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">AeroHub Nigeria</h1>
+                        <p class="text-xs text-text-secondary">Premium Aviation Gateway</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="smart_homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="terminal_navigator.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Terminal Guide</a>
+                        <a href="services_marketplace.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Services</a>
+                        <a href="travel_intelligence_center.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Travel Intelligence</a>
+                        <a href="about_aero_hub_nigeria.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        <a href="contact_support_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="smart_homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="terminal_navigator.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Terminal Guide</a>
+                <a href="services_marketplace.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Services</a>
+                <a href="travel_intelligence_center.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Travel Intelligence</a>
+                <a href="about_aero_hub_nigeria.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="contact_support_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#2E8B57" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6">
+                    Premium Services <span class="text-secondary">Marketplace</span>
+                </h1>
+                <p class="text-lg text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Elevate your airport experience with our curated selection of premium services. 
+                    From luxury lounges to cultural experiences, book everything you need for a seamless Nigerian journey.
+                </p>
+
+                <!-- Search and Filter Bar -->
+                <div class="max-w-4xl mx-auto bg-surface rounded-2xl shadow-elevation p-6">
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <div class="flex-1">
+                            <div class="relative">
+                                <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
+                                <input type="text" placeholder="Search services..." class="input-field pl-10" id="serviceSearch" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <select class="input-field" id="categoryFilter">
+                                <option value>All Categories</option>
+                                <option value="lounge">Premium Lounges</option>
+                                <option value="parking">Parking Services</option>
+                                <option value="transport">Transportation</option>
+                                <option value="assistance">Special Assistance</option>
+                                <option value="cultural">Cultural Experiences</option>
+                                <option value="shopping">Shopping & Dining</option>
+                            </select>
+                            <button class="btn-primary whitespace-nowrap" onclick="resetFilters()">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Featured Premium Services</h2>
+                <p class="text-lg text-text-secondary">Most popular services chosen by discerning travelers</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Premium Lounge Access -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop" alt="Premium Lounge" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-medium">Available Now</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="w-8 h-8 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-semibold text-primary">Executive Lounge Access</h3>
+                            <div class="flex items-center text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm">4.8</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Premium lounge with Nigerian cuisine, business facilities, shower suites, and panoramic runway views. 
+                            Includes complimentary Wi-Fi, beverages, and concierge services.
+                        </p>
+                        
+                        <!-- Amenities -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary-100 text-primary px-2 py-1 rounded-full text-xs">Free Wi-Fi</span>
+                            <span class="bg-primary-100 text-primary px-2 py-1 rounded-full text-xs">Shower Suites</span>
+                            <span class="bg-primary-100 text-primary px-2 py-1 rounded-full text-xs">Nigerian Cuisine</span>
+                            <span class="bg-primary-100 text-primary px-2 py-1 rounded-full text-xs">Business Center</span>
+                        </div>
+
+                        <!-- Pricing -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-secondary">₦15,000</div>
+                                <div class="text-sm text-text-secondary">$18.50 USD • Per person</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-sm text-success font-medium">12 spots left</div>
+                                <div class="text-xs text-text-secondary">Today</div>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary w-full">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Premium Parking -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/753876/pexels-photo-753876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Premium Parking" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2016/11/19/11/26/automotive-1838744_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-medium">Available</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="w-8 h-8 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-semibold text-primary">Secure Premium Parking</h3>
+                            <div class="flex items-center text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm">4.9</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Climate-controlled covered parking with 24/7 security, CCTV monitoring, and complimentary car wash service. 
+                            Located just 2 minutes walk from terminal entrance.
+                        </p>
+                        
+                        <!-- Features -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary-100 text-secondary px-2 py-1 rounded-full text-xs">24/7 Security</span>
+                            <span class="bg-secondary-100 text-secondary px-2 py-1 rounded-full text-xs">Covered</span>
+                            <span class="bg-secondary-100 text-secondary px-2 py-1 rounded-full text-xs">Car Wash</span>
+                            <span class="bg-secondary-100 text-secondary px-2 py-1 rounded-full text-xs">2min Walk</span>
+                        </div>
+
+                        <!-- Pricing -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-secondary">₦2,500</div>
+                                <div class="text-sm text-text-secondary">$3.10 USD • Per day</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-sm text-success font-medium">8 spots left</div>
+                                <div class="text-xs text-text-secondary">Today</div>
+                            </div>
+                        </div>
+
+                        <button class="btn-secondary w-full">Reserve Spot</button>
+                    </div>
+                </div>
+
+                <!-- Cultural Experience -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop" alt="Nigerian Cultural Experience" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Exclusive</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="w-8 h-8 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-semibold text-primary">Nigerian Cultural Concierge</h3>
+                            <div class="flex items-center text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm">5.0</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Personal cultural guide service featuring authentic Nigerian cuisine tasting, traditional art gallery tour, 
+                            and business networking connections with local entrepreneurs.
+                        </p>
+                        
+                        <!-- Includes -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent-100 text-accent px-2 py-1 rounded-full text-xs">Cuisine Tasting</span>
+                            <span class="bg-accent-100 text-accent px-2 py-1 rounded-full text-xs">Art Gallery</span>
+                            <span class="bg-accent-100 text-accent px-2 py-1 rounded-full text-xs">Networking</span>
+                            <span class="bg-accent-100 text-accent px-2 py-1 rounded-full text-xs">Personal Guide</span>
+                        </div>
+
+                        <!-- Pricing -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-secondary">₦35,000</div>
+                                <div class="text-sm text-text-secondary">$43.20 USD • 2 hours</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-sm text-warning font-medium">3 slots left</div>
+                                <div class="text-xs text-text-secondary">Today</div>
+                            </div>
+                        </div>
+
+                        <button class="btn-accent w-full">Book Experience</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Browse by Category</h2>
+                <p class="text-lg text-text-secondary">Discover all available services organized by category</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Premium Lounges -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300 cursor-pointer" onclick="filterByCategory('lounge')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary-200 transition-colors">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Premium Lounges</h3>
+                            <p class="text-sm text-text-secondary">5 available options</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Exclusive lounges with Nigerian cuisine, business facilities, and panoramic views
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-secondary font-semibold">From ₦12,000</span>
+                        <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Transportation -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300 cursor-pointer" onclick="filterByCategory('transport')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-200 transition-colors">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Ground Transportation</h3>
+                            <p class="text-sm text-text-secondary">8 service providers</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Luxury transfers, ride-sharing, and premium car services with upfront pricing
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-secondary font-semibold">From ₦5,000</span>
+                        <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Parking Services -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300 cursor-pointer" onclick="filterByCategory('parking')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-secondary-200 transition-colors">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Parking Services</h3>
+                            <p class="text-sm text-text-secondary">3 parking zones</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Secure covered parking with 24/7 security and complimentary services
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-secondary font-semibold">From ₦2,000/day</span>
+                        <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Special Assistance -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300 cursor-pointer" onclick="filterByCategory('assistance')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-success-200 transition-colors">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Special Assistance</h3>
+                            <p class="text-sm text-text-secondary">VIP & accessibility</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Personal assistance, wheelchair services, and VIP escort through terminals
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-secondary font-semibold">From ₦10,000</span>
+                        <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Cultural Experiences -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300 cursor-pointer" onclick="filterByCategory('cultural')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-200 transition-colors">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v3M7 4H5a1 1 0 00-1 1v3m0 0v8a1 1 0 001 1h3M7 4h10M5 8h14m-9 4h4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Cultural Experiences</h3>
+                            <p class="text-sm text-text-secondary">Authentic Nigerian</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Guided cultural tours, cuisine tastings, and business networking opportunities
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-secondary font-semibold">From ₦25,000</span>
+                        <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Shopping & Dining -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300 cursor-pointer" onclick="filterByCategory('shopping')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary-200 transition-colors">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Shopping & Dining</h3>
+                            <p class="text-sm text-text-secondary">Pre-order & reserve</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Duty-free shopping, restaurant reservations, and Nigerian luxury brand previews
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-secondary font-semibold">Varies</span>
+                        <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-text-secondary">Verified reviews from travelers who experienced our premium services</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Adebayo Ogundimu" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Adebayo Ogundimu</h4>
+                            <div class="flex items-center">
+                                <div class="flex text-secondary mr-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="text-sm text-text-secondary">Executive Lounge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "The Executive Lounge exceeded my expectations. Authentic Nigerian dishes, excellent Wi-Fi for business calls, 
+                        and the shower facilities were spotless. Worth every naira!"
+                    </p>
+                    <div class="text-sm text-text-secondary">
+                        <span class="text-success font-medium">Verified Purchase</span> • 3 days ago
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah Mitchell" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1974&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Sarah Mitchell</h4>
+                            <div class="flex items-center">
+                                <div class="flex text-secondary mr-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="text-sm text-text-secondary">Cultural Concierge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Amazing cultural experience! My guide was knowledgeable about Nigerian history and business culture. 
+                        The networking connections I made were invaluable for my Lagos meetings."
+                    </p>
+                    <div class="text-sm text-text-secondary">
+                        <span class="text-success font-medium">Verified Purchase</span> • 1 week ago
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Chukwuma Nwankwo" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Chukwuma Nwankwo</h4>
+                            <div class="flex items-center">
+                                <div class="flex text-secondary mr-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="text-sm text-text-secondary">Premium Parking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Convenient and secure parking with excellent service. My car was washed and ready when I returned from my trip. 
+                        The location is perfect - just a short walk to the terminal."
+                    </p>
+                    <div class="text-sm text-text-secondary">
+                        <span class="text-success font-medium">Verified Purchase</span> • 2 weeks ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Process -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Simple Booking Process</h2>
+                <p class="text-lg text-text-secondary">Book your premium services in just a few clicks</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Browse Services</h3>
+                    <p class="text-text-secondary text-sm">
+                        Explore our curated selection of premium services with detailed descriptions and real-time availability
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Select & Customize</h3>
+                    <p class="text-text-secondary text-sm">
+                        Choose your preferred service, select date and time, and customize options to match your needs
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Secure Payment</h3>
+                    <p class="text-text-secondary text-sm">
+                        Pay securely with saved payment methods, loyalty points, or new payment options
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-white">4</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Enjoy Service</h3>
+                    <p class="text-text-secondary text-sm">
+                        Receive digital vouchers and enjoy your premium service with seamless check-in
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12">
+                <button class="btn-primary text-lg px-8 py-4">Start Booking Now</button>
+                <p class="text-sm text-text-secondary mt-4">
+                    Free cancellation up to 2 hours before service • Instant confirmation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="white"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#2E8B57"/>
+                            <circle cx="20" cy="20" r="4" fill="#DAA520"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-xl font-bold">AeroHub Nigeria</h3>
+                            <p class="text-sm opacity-90">Premium Aviation Gateway</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 mb-4 max-w-md">
+                        Where Nigeria meets the world. Experience seamless journeys through our premium digital aviation gateway 
+                        with authentic Nigerian hospitality and world-class efficiency.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li><a href="terminal_navigator.html" class="hover:text-white transition-colors">Terminal Guide</a></li>
+                        <li><a href="services_marketplace.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="travel_intelligence_center.html" class="hover:text-white transition-colors">Travel Intelligence</a></li>
+                        <li><a href="about_aero_hub_nigeria.html" class="hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li>+234 1 234 5678</li>
+                        <li>info@aerohub.ng</li>
+                        <li>Murtala Muhammed International Airport</li>
+                        <li>Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+                <p>&copy; 2025 AeroHub Nigeria. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = event.target.closest('button');
+            
+            if (!menuButton && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Filter functionality
+        function filterByCategory(category) {
+            const categoryFilter = document.getElementById('categoryFilter');
+            categoryFilter.value = category;
+            // In a real application, this would filter the services
+            console.log('Filtering by category:', category);
+        }
+
+        function resetFilters() {
+            const serviceSearch = document.getElementById('serviceSearch');
+            const categoryFilter = document.getElementById('categoryFilter');
+            
+            serviceSearch.value = '';
+            categoryFilter.value = '';
+            
+            // In a real application, this would reset all filters
+            console.log('Filters reset');
+        }
+
+        // Search functionality
+        document.getElementById('serviceSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // In a real application, this would filter services based on search term
+            console.log('Searching for:', searchTerm);
+        });
+
+        // Category filter functionality
+        document.getElementById('categoryFilter').addEventListener('change', function(e) {
+            const selectedCategory = e.target.value;
+            // In a real application, this would filter services by category
+            console.log('Category selected:', selectedCategory);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

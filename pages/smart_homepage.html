@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AeroHub Nigeria - Where Nigeria Meets the World</title>
+    <meta name="description" content="Premium Digital Aviation Gateway - Your seamless journey through Nigeria's most advanced airport experience" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerohubni2963back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#2E8B57"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#DAA520"/>
+                            <circle cx="20" cy="20" r="4" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">AeroHub Nigeria</h1>
+                        <p class="text-xs text-text-secondary">Premium Aviation Gateway</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="smart_homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="terminal_navigator.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Terminal Guide</a>
+                        <a href="services_marketplace.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Services</a>
+                        <a href="travel_intelligence_center.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Travel Intelligence</a>
+                        <a href="about_aero_hub_nigeria.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        <a href="contact_support_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="smart_homepage.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="terminal_navigator.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Terminal Guide</a>
+                <a href="services_marketplace.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                <a href="travel_intelligence_center.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Travel Intelligence</a>
+                <a href="about_aero_hub_nigeria.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="contact_support_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Dynamic Dashboard -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#2E8B57" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6">
+                        Where Nigeria <span class="text-secondary">Meets</span> the World
+                    </h1>
+                    <p class="text-lg text-text-secondary mb-8 max-w-2xl">
+                        Experience seamless journeys through Nigeria's most advanced digital aviation gateway. 
+                        Premium services, real-time information, and authentic Nigerian hospitality.
+                    </p>
+                    
+                    <!-- Quick Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="btn-primary">Check Flight Status</button>
+                        <button class="btn-secondary">Book Services</button>
+                    </div>
+
+                    <!-- Live Stats -->
+                    <div class="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-border-light">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">98.2%</div>
+                            <div class="text-sm text-text-secondary">On-Time Performance</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-secondary">4.8★</div>
+                            <div class="text-sm text-text-secondary">Customer Rating</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent">24/7</div>
+                            <div class="text-sm text-text-secondary">Premium Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-Time Flight Status Widget -->
+                <div class="bg-surface rounded-2xl shadow-elevation p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-semibold text-primary">Live Flight Status</h3>
+                        <div class="flex items-center text-success">
+                            <div class="w-2 h-2 bg-success rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-sm">Live</span>
+                        </div>
+                    </div>
+
+                    <!-- Flight Tabs -->
+                    <div class="flex mb-4 bg-background rounded-lg p-1">
+                        <button class="flex-1 py-2 px-4 text-sm font-medium bg-primary text-white rounded-md">Departures</button>
+                        <button class="flex-1 py-2 px-4 text-sm font-medium text-text-secondary hover:text-primary">Arrivals</button>
+                    </div>
+
+                    <!-- Flight List -->
+                    <div class="space-y-4">
+                        <!-- Flight 1 -->
+                        <div class="flex items-center justify-between p-4 bg-background rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop" alt="Aircraft" class="w-12 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <div>
+                                    <div class="font-semibold">LH 568</div>
+                                    <div class="text-sm text-text-secondary">Lagos → Frankfurt</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold">14:30</div>
+                                <div class="text-sm text-success">On Time</div>
+                            </div>
+                        </div>
+
+                        <!-- Flight 2 -->
+                        <div class="flex items-center justify-between p-4 bg-background rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Aircraft" class="w-12 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <div>
+                                    <div class="font-semibold">BA 075</div>
+                                    <div class="text-sm text-text-secondary">Lagos → London</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold">16:45</div>
+                                <div class="text-sm text-warning">Delayed 15min</div>
+                            </div>
+                        </div>
+
+                        <!-- Flight 3 -->
+                        <div class="flex items-center justify-between p-4 bg-background rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://images.pixabay.com/photo/2016/12/11/12/02/aircraft-1899441_1280.jpg" alt="Aircraft" class="w-12 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <div>
+                                    <div class="font-semibold">EK 783</div>
+                                    <div class="text-sm text-text-secondary">Lagos → Dubai</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold">22:15</div>
+                                <div class="text-sm text-success">On Time</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-4 text-primary font-medium hover:bg-primary-50 py-2 rounded-lg transition-colors">
+                        View All Flights →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Marketplace -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Premium Services Marketplace</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Book premium airport services with real-time availability and transparent pricing in Naira
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Lounge Access -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary mb-2">Premium Lounge</h3>
+                        <p class="text-text-secondary text-sm mb-4">Access to exclusive lounges with premium amenities</p>
+                        <div class="text-2xl font-bold text-secondary mb-4">₦15,000</div>
+                        <button class="btn-primary w-full">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Parking Reservation -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-200 transition-colors">
+                            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary mb-2">Secure Parking</h3>
+                        <p class="text-text-secondary text-sm mb-4">Reserved parking spots with 24/7 security</p>
+                        <div class="text-2xl font-bold text-secondary mb-4">₦2,500/day</div>
+                        <button class="btn-secondary w-full">Reserve Spot</button>
+                    </div>
+                </div>
+
+                <!-- Ground Transportation -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-colors">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary mb-2">Premium Transfer</h3>
+                        <p class="text-text-secondary text-sm mb-4">Luxury airport transfers and ride booking</p>
+                        <div class="text-2xl font-bold text-secondary mb-4">₦8,000</div>
+                        <button class="btn-accent w-full">Book Transfer</button>
+                    </div>
+                </div>
+
+                <!-- Special Assistance -->
+                <div class="card-elevated group hover:shadow-card-hover transition-all duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-colors">
+                            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary mb-2">VIP Assistance</h3>
+                        <p class="text-text-secondary text-sm mb-4">Personal assistance for seamless travel</p>
+                        <div class="text-2xl font-bold text-secondary mb-4">₦25,000</div>
+                        <button class="btn-primary w-full">Request Service</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Terminal Preview -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Experience Our Modern Terminal
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        Take a virtual tour of our state-of-the-art facilities featuring Nigerian cultural art installations, 
+                        premium amenities, and world-class passenger services.
+                    </p>
+
+                    <!-- Features List -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">Nigerian Cultural Art Gallery</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">Premium Shopping & Dining</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">Smart Wayfinding System</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">24/7 Premium Lounges</span>
+                        </div>
+                    </div>
+
+                    <a href="terminal_navigator.html" class="btn-primary">Start Virtual Tour</a>
+                </div>
+
+                <!-- Terminal Preview -->
+                <div class="relative">
+                    <div class="relative overflow-hidden rounded-2xl shadow-elevation">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop" alt="Modern Airport Terminal" class="w-full h-96 object-cover" onerror="this.src='https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        
+                        <!-- Overlay with 360° indicator -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <div class="flex items-center justify-between text-white">
+                                    <div>
+                                        <h4 class="font-semibold">Terminal A - Departure Hall</h4>
+                                        <p class="text-sm opacity-90">Interactive 360° Experience</p>
+                                    </div>
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Info Cards -->
+                    <div class="absolute -top-4 -right-4 bg-surface rounded-lg shadow-card p-4 max-w-xs">
+                        <div class="flex items-center mb-2">
+                            <div class="w-3 h-3 bg-success rounded-full mr-2"></div>
+                            <span class="text-sm font-medium">Live Terminal Status</span>
+                        </div>
+                        <p class="text-xs text-text-secondary">Current wait time: 5-8 minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Testimonials -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Trusted by Travelers Worldwide</h2>
+                <p class="text-lg text-text-secondary">Real experiences from passengers who chose AeroHub Nigeria</p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Testimonial 1 -->
+                <div class="card text-center">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="James Okafor" class="w-16 h-16 rounded-full mx-auto object-cover" onerror="this.src='https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="flex justify-center mb-4">
+                        <div class="flex text-secondary">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 italic">
+                        "Exceptional service from arrival to departure. The digital experience made everything seamless, 
+                        and the Nigerian hospitality was outstanding."
+                    </p>
+                    <div class="font-semibold text-primary">James Okafor</div>
+                    <div class="text-sm text-text-secondary">Business Traveler, Lagos</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card text-center">
+                    <div class="mb-4">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah Johnson" class="w-16 h-16 rounded-full mx-auto object-cover" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1974&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <div class="flex justify-center mb-4">
+                        <div class="flex text-secondary">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 italic">
+                        "First time visiting Nigeria and AeroHub made the experience incredible. The cultural showcases 
+                        and premium services exceeded all expectations."
+                    </p>
+                    <div class="font-semibold text-primary">Sarah Johnson</div>
+                    <div class="text-sm text-text-secondary">International Visitor, UK</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card text-center">
+                    <div class="mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Ahmed Musa" class="w-16 h-16 rounded-full mx-auto object-cover" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <div class="flex justify-center mb-4">
+                        <div class="flex text-secondary">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 italic">
+                        "As a frequent traveler, I can confidently say AeroHub Nigeria sets the standard for African aviation. 
+                        World-class facilities with authentic Nigerian warmth."
+                    </p>
+                    <div class="font-semibold text-primary">Ahmed Musa</div>
+                    <div class="text-sm text-text-secondary">Frequent Flyer, Abuja</div>
+                </div>
+            </div>
+
+            <!-- Partnership Logos -->
+            <div class="border-t border-border-light pt-12">
+                <h3 class="text-center text-lg font-semibold text-text-secondary mb-8">Trusted Partners</h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+                    <div class="text-2xl font-bold text-primary">Lufthansa</div>
+                    <div class="text-2xl font-bold text-primary">British Airways</div>
+                    <div class="text-2xl font-bold text-primary">Emirates</div>
+                    <div class="text-2xl font-bold text-primary">Air France</div>
+                    <div class="text-2xl font-bold text-primary">Turkish Airlines</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="white"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#2E8B57"/>
+                            <circle cx="20" cy="20" r="4" fill="#DAA520"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-xl font-bold">AeroHub Nigeria</h3>
+                            <p class="text-sm opacity-90">Premium Aviation Gateway</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 mb-4 max-w-md">
+                        Where Nigeria meets the world. Experience seamless journeys through our premium digital aviation gateway 
+                        with authentic Nigerian hospitality and world-class efficiency.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li><a href="terminal_navigator.html" class="hover:text-white transition-colors">Terminal Guide</a></li>
+                        <li><a href="services_marketplace.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="travel_intelligence_center.html" class="hover:text-white transition-colors">Travel Intelligence</a></li>
+                        <li><a href="about_aero_hub_nigeria.html" class="hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li>+234 1 234 5678</li>
+                        <li>info@aerohub.ng</li>
+                        <li>Murtala Muhammed International Airport</li>
+                        <li>Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+                <p>&copy; 2025 AeroHub Nigeria. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = event.target.closest('button');
+            
+            if (!menuButton && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
