@@ -170,7 +170,7 @@
                     <div class="relative overflow-hidden rounded-2xl shadow-elevation">
                         <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop" alt="Modern Airport Terminal" class="w-full h-96 object-cover" onerror="this.src='https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                         
-                        <!-- Overlay -->
+                
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
                     </div>
                 </div>
@@ -232,14 +232,14 @@
     <section class="py-16 bg-surface">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Interactive Map Placeholder -->
+            
                 <div class="relative">
                     <div class="bg-primary-50 rounded-2xl p-8 text-center">
                         <h3 class="text-2xl font-bold text-primary mb-4">Gateway to West Africa</h3>
                         <div class="relative bg-surface rounded-lg p-6 shadow-card">
                             <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop" alt="Route Connectivity Map" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                             
-                            <!-- Map Overlay -->
+                           
                             <div class="absolute inset-0 bg-primary/10 rounded-lg flex items-center justify-center">
                                 <div class="text-center text-primary">
                                     <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -250,7 +250,7 @@
                             </div>
                         </div>
                         
-                        <!-- Route Stats -->
+                      
                         <div class="grid grid-cols-2 gap-4 mt-6">
                             <div class="text-center">
                                 <div class="text-2xl font-bold text-secondary">150+</div>
@@ -264,7 +264,7 @@
                     </div>
                 </div>
 
-                <!-- Economic Impact -->
+                
                 <div>
                     <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6">Economic Impact</h2>
                     <p class="text-lg text-text-secondary mb-8">
@@ -272,7 +272,7 @@
                         tourism, and regional development while creating thousands of direct and indirect employment opportunities.
                     </p>
 
-                    <!-- Impact Metrics -->
+                    
                     <div class="space-y-6">
                         <div class="flex items-center">
                             <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mr-4">
@@ -626,7 +626,7 @@
             mobileMenu.classList.toggle('hidden');
         }
 
-        // Close mobile menu when clicking outside
+    
         document.addEventListener('click', function(event) {
             const mobileMenu = document.getElementById('mobile-menu');
             const menuButton = event.target.closest('button');
@@ -636,7 +636,7 @@
             }
         });
 
-        // Smooth scrolling for anchor links
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -650,7 +650,7 @@
             });
         });
 
-        // Timeline animation on scroll
+       
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -665,7 +665,7 @@
             });
         }, observerOptions);
 
-        // Observe timeline items
+    
         document.querySelectorAll('.card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(20px)';

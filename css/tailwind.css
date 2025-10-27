@@ -5,18 +5,17 @@
 @tailwind utilities;
 
 :root {
-  /* Primary Colors */
-  --color-primary: #2E8B57; /* sea-green */
-  --color-primary-50: #F0F9F4; /* emerald-50 */
-  --color-primary-100: #DCFCE7; /* emerald-100 */
-  --color-primary-200: #BBF7D0; /* emerald-200 */
-  --color-primary-300: #86EFAC; /* emerald-300 */
-  --color-primary-400: #4ADE80; /* emerald-400 */
-  --color-primary-500: #2E8B57; /* sea-green */
-  --color-primary-600: #16A34A; /* emerald-600 */
-  --color-primary-700: #15803D; /* emerald-700 */
-  --color-primary-800: #166534; /* emerald-800 */
-  --color-primary-900: #14532D; /* emerald-900 */
+  --color-primary: #2E8B57; 
+  --color-primary-50: #F0F9F4; 
+  --color-primary-100: #DCFCE7; 
+  --color-primary-200: #BBF7D0; 
+  --color-primary-300: #86EFAC;
+  --color-primary-400: #4ADE80; 
+  --color-primary-500: #2E8B57; 
+  --color-primary-600: #16A34A; 
+  --color-primary-700: #15803D;
+  --color-primary-800: #166534; 
+  --color-primary-900: #14532D;
 
   /* Secondary Colors */
   --color-secondary: #DAA520; /* goldenrod */
@@ -44,7 +43,7 @@
   --color-accent-800: #9A3412; /* orange-800 */
   --color-accent-900: #7C2D12; /* orange-900 */
 
-  /* Background Colors */
+
   --color-background: #FAFAFA; /* gray-50 */
   --color-surface: #FFFFFF; /* white */
 
